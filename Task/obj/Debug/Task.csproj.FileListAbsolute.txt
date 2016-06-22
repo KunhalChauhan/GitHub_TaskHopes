@@ -1,0 +1,14 @@
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\Task.dll.config
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\Task.dll
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\Task.pdb
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\Newtonsoft.Json.dll
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\System.Net.Http.Formatting.dll
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\System.Web.Http.dll
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\System.Web.Http.WebHost.dll
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\Newtonsoft.Json.xml
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\System.Net.Http.Formatting.xml
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\System.Web.Http.xml
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\bin\System.Web.Http.WebHost.xml
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\obj\Debug\Task.csprojResolveAssemblyReference.cache
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\obj\Debug\Task.dll
+E:\KNOWLEDGEFLEX\Web Applications\Task\Task\obj\Debug\Task.pdb

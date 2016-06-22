@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from flatfull.com/themes/first/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jun 2016 23:52:11 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Mobile first web app theme | first</title>
+    <meta name="description" content="mobile first, app, web app, responsive, admin dashboard, flat, flat ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/app.v2.css" type="text/css" />
+    <!--[if lt IE 9]> <script src="assets/js/ie/respond.min.js"></script> <script src="assets/js/ie/html5.js"></script>
+         <script src="assets/js/ie/excanvas.js"></script> <![endif]-->
+    <script src="assets/Operation/Taskgroups.js"></script>
+    <script>
+        window.onload = function () {
+            checkAuth()
+        };
+    </script>
+</head>
+<body style="background: url(assets/images/dotted.png)" class="header-bar">
+    <!-- header -->
+    <header id="header" class="navbar" style="background-color: #ffffff; border-bottom: 4px solid #f8f8f8">
+        <ul class="nav navbar-nav navbar-avatar pull-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="height:60px;padding-top:10px;color:#ffa500">
+                    <span class="hidden-xs-only">Kunhal Chauhan</span>
+                    <span class="thumb-small avatar inline">
+                        <img src="assets/images/avatar.jpg" alt="Kunhal Chauhan" class="img-circle">
+                    </span>
+                    <b class="caret hidden-xs-only"></b>
+                </a> <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#"><span class="badge bg-danger pull-right">3</span>Notifications</a></li>
+                    <li class="divider"></li>
+                    <li><a href="docs.html">Help</a></li>
+                    <li><a href="signin.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navbar-brand" style="background-color: #ffffff; height: 60px; padding-right: 50px; border: 0px; "><img src="assets/images/TASKHOPS.png" style="height:35px;" /></div>
+        <!--<div class="navbar-brand" style="background-color: #000000;height:60px"></div>-->
+        <button style="height:60px" type="button" class="btn btn-link pull-left nav-toggle visible-xs" data-toggle="class:slide-nav slide-nav-left" data-target="body">
+            <i class="fa fa-bars fa-lg text-default"></i>
+        </button>
+        <div class="nav navbar-nav hidden-xs" style="height: 60px; background-color: #f8f8f8">
+            <div class="col-md-2" style="width: 0; height: 0; border-bottom: 60px dotted #ffffff; border-right: 50px solid transparent; "></div>
+
+        </div>
+        <div class="nav navbar-nav hidden-xs" style="height:60px;background-color:#ffa500">
+
+            <div class="col-md-2" style="width: 180px; height: 60px; background-color: #f8f8f8; font-weight:400;text-shadow:1px 1px 1px #37474f; padding-top: 25px; color: #37474f; font-size: 21px;font-family:Verdana">
+                <span class="col-sm-2" style="color:#37474f;border-bottom:3px solid #ffa500;margin-left:15px"></span>
+                <div class="col-sm-12">TASK-LIST</div>
+            </div>
+
+        </div>
+        <div class="nav navbar-nav hidden-xs" style="height:60px;background-color:#f8f8f8">
+
+            <div class="col-md-2" style="width: 0; height: 0; border-top: 60px solid #ffffff; border-left: 50px solid transparent; "></div>
+
+        </div>
+
+    </header> <!-- / header --> <!-- nav -->
+    <nav id="nav" class="nav-primary hidden-xs nav-vertical">
+        <ul class="nav" data-spy="affix" data-offset-top="50">
+            <li style="padding-top:10px;background-color:#;border-bottom:1px solid #354a5f;">
+                <a href="index.html" style="font-weight: normal"><i class="fa fa-dashboard fa-lg"></i><span>DASHBOARD</span></a>
+            </li>
+            <li class="dropdown-submenu" style="border-bottom: 1px solid #354a5f;">
+                <a href="create-task.html" style="font-weight: normal"><i class="fa fa-bolt fa-lg"></i><span>CREATE TASK</span></a>
+
+            </li>
+            <li class="active" style="border-bottom: 1px solid #354a5f;">
+                <a href="Task-list.html" style="font-weight: normal"><i class="fa fa-edit fa-lg"></i><span>TASK LIST</span></a>
+
+            </li>
+            <li><a href="Reports-analytics.html" style="border-bottom: 1px solid #354a5f; font-weight: normal"><i class="fa fa-user fa-lg"></i><span>CREATE USER</span></a></li>
+            <li><a href="Reports-analytics.html" style="border-bottom: 1px solid #354a5f; font-weight: normal"><i class="fa fa-file-text fa-lg"></i><span>REPORTS</span></a></li>
+        </ul>
+    </nav> <!-- / nav -->
+
+    <section id="content" style="padding-top:20px">
+        <section class="main padder" style="">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- .breadcrumb --> <ul class="breadcrumb">
+                        <li><a href="Task-list.html"><i class="fa fa-edit"></i> TASK-LIST</a></li>
+                        <li><i class="fa fa-list-ul"></i> TASK-GROUPS</li>
+                    </ul> <!-- / .breadcrumb -->
+                </div>
+                <div class="col-md-12" style="margin-top:10px">
+                    <div class="col-md-9" style="height:60px;  ">
+
+                    </div>
+                    <div class="col-md-3" style="height:auto;padding:0">
+                        <a class="btn btn-white" data-toggle="modal" href="#modal" style="height:40px;padding-top:8px;width:160px;border-radius:4px;float:right">
+                            <i class="fa fa-fw fa-plus"></i>CREATE GROUPS
+                        </a>
+                    </div>
+                    <div class="col-md-12" style="height: auto;min-height:180px; padding: 0;padding-bottom:20px; background-color: #f8f8f8; box-shadow: 2px 2px 10px #808080;">
+                        <div class="col-md-12" style="height: 45px; background-color: #f8f8f8; font-size: 16px; font-weight: bold; padding: 12px; color: #354a5f; box-shadow: 0px 0px 2px #ccc5c5;">
+                            <i class="fa fa-list-alt"></i> User List
+                        </div>
+                        <div class="col-md-12" style="height: auto; background-color: #; font-size: 18px; padding: 10px; padding-top:20px;">
+                            <div class="col-md-12" style="border-bottom: 1px dashed #ccc5c5;height:auto;padding-left:0;padding-right:0">
+                                <div class="col-sm-4" style="padding:0"><input id="Text1" type="text" class="form-control" placeholder="Search...." style="width:;height:40px; border-radius: 6px 0px 0px 6px" /></div>
+                                <div class="col-sm-6" style="padding:0"><a class="btn btn-white" style="border-radius: 0px 6px 6px 0px; width: 60px; height: 40px;padding:8px"><i class="fa fa-search"></i></a></div>
+
+                                <div class="col-md-2" style="padding:0;margin-top:-5px;text-align:right">
+                                    <ul class="pagination pagination">
+                                        <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12" style="height: auto; background-color: #; font-size: 18px; padding: 10px; padding-top:0px;font-size:15px;">
+                            <table class="table  table-bordered">
+                                <thead style="background-color:#37474f;color:white">
+                                    <tr>
+                                        <td style="width:30px"><input id="Checkbox1" type="checkbox" class="form-control" style="height: 15px; width: 15px" /></td>
+                                        <td>GROUP Name</td>
+                                        <td>STRENGTH</td>
+                                    </tr>
+                                </thead>
+                                <tbody id="GroupList">
+                                    
+                                </tbody>
+                                <input id="hdnusergroupid" type="hidden" value="0" />
+                            </table>
+
+                        </div>
+                        <div class="col-md-12" style="height: auto; background-color: #; font-size: 18px; padding: 10px; padding-top:0px;font-size:15px;">
+                            <input  onclick="UpdateMapping()" class="btn btn-default" type="button" value="SAVE"/>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </section> <!-- .modal --> <div id="modal" class="modal fade">
+        <form class="m-b-none">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                        <h4 class="modal-title" id="myModalLabel">Post your first idea</h4>
+                    </div> <div class="modal-body">
+                        <div class="block">
+                            <label class="control-label">Title</label>
+                            <input type="text" class="form-control" placeholder="Post title">
+                        </div>
+                        <div class="block">
+                            <label class="control-label">Content</label> <textarea class="form-control" placeholder="Content" rows="5"></textarea>
+                        </div> <div class="checkbox"> <label> <input type="checkbox"> Share with all memebers of first </label> </div>
+                    </div> <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Save</button>
+                        <button type="button" class="btn btn-sm btn-primary" data-loading-text="Publishing...">Publish</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div>
+        </form>
+    </div> <!-- / .modal -->
+    <a id="btnmodelII" type="button" style="display:none" data-toggle="modal" href="#modalII"></a>
+    <div id="modalII" class="modal fade">
+        <form class="m-b-none">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                        <h4 class="modal-title" id="myModalLabel">Warning.!</h4>
+                    </div> <div class="modal-body">
+                        <div class="block" id="MessgeII" style="color:red">
+
+                        </div>
+                    </div> <div class="modal-footer">
+
+                        <button id="btnCan" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div>
+        </form>
+    </div> <!-- footer --> <footer id="footer">
+        <div class="text-center padder clearfix">
+            <p>
+                <small>&copy; Powered by : knowledgeflex Technologies Pvt. Ltd.</small><br><br>
+                <a href="#" class="btn btn-xs btn-circle btn-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="btn btn-xs btn-circle btn-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="btn btn-xs btn-circle btn-gplus"><i class="fa fa-google-plus"></i></a>
+            </p>
+        </div>
+    </footer> <a href="#" class="hide slide-nav-block" data-toggle="class:slide-nav slide-nav-left" data-target="body"></a>
+    <!-- / footer --> <!-- Bootstrap --> <!-- app --> <!-- Sparkline Chart --> <!-- Easy Pie Chart -->
+    <script src="assets/js/app.v2.js"></script>
+</body>
+<!-- Mirrored from flatfull.com/themes/first/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jun 2016 23:52:20 GMT -->
+</html>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from flatfull.com/themes/first/signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jun 2016 23:52:36 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Mobile first web app theme | first</title>
+    <meta name="description" content="mobile first, app, web app, responsive, admin dashboard, flat, flat ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/app.v2.css" type="text/css" />
+    
+     <!--[if lt IE 9]> <script src="js/ie/respond.min.js"></script> <script src="js/ie/html5.js"></script> <![endif]-->
+</head>
+<body style="background: url(assets/images/dotted.png)">
+    <header id="header" class="navbar" style="background-color: #ffffff; border-bottom: 4px solid #f8f8f8">
+
+        <div class="navbar-brand" style="background-color: #ffffff; height: 60px; padding-right: 50px; border: 0px; "><img src="assets/images/TASKHOPS.png" style="height:35px;" /></div>
+        <!--<div class="navbar-brand" style="background-color: #000000;height:60px"></div>-->
+
+        <div class="nav navbar-nav hidden-xs" style="height: 60px; background-color: #f8f8f8">
+            <div class="col-md-2" style="width: 0; height: 0; border-bottom: 60px dotted #ffffff; border-right: 50px solid transparent; "></div>
+
+        </div>
+        <div class="nav navbar-nav hidden-xs" style="height:60px;background-color:#ffa500">
+
+            <div class="col-md-2" style="width: 180px; height: 60px; background-color: #f8f8f8; font-weight:400;text-shadow:1px 1px 1px #37474f; padding-top: 22px; color: #37474f; font-size: 23px;font-family:Verdana">
+                <span class="col-sm-2" style="color:#37474f;border-bottom:3px solid #ffa500;margin-left:15px"></span>
+                <div class="col-sm-12">SIGN IN</div>
+            </div>
+
+        </div>
+        <div class="nav navbar-nav hidden-xs" style="height:60px;background-color:#f8f8f8">
+
+            <div class="col-md-2" style="width: 0; height: 0; border-top: 60px solid #ffffff; border-left: 50px solid transparent; "></div>
+
+        </div>
+
+    </header>
+    <section id="content">
+        <div class="main padder">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4 m-t-large">
+                    <section class="panel">
+                        <header class="panel-heading text-center"> Sign in </header>
+                        <div class="panel-body">
+                            <div class="block">
+                                <label class="control-label">Email</label>
+                                <input id="UID" type="email" placeholder="test@example.com" class="form-control" style="height:40px">
+                            </div>
+                            <div class="block">
+                                <label class="control-label">Password</label>
+                                <input id="Pass" type="password" id="inputPassword" placeholder="Password" class="form-control" style="height:40px">
+                            </div>
+                            <div class="checkbox">
+                                <label> <input type="checkbox"> Keep me logged in </label>
+                            </div>
+                            <a href="#" class="pull-right m-t-mini"><small>Forgot password?</small></a>
+                            
+                            <a id="BtnLog" href="#" class="btn btn-info" style="width:120px;height:38px">Sign In</a>
+
+                            <div class="line line-dashed"></div> <p class="text-muted text-center"><small>Do not have an account?</small></p>
+                            <a href="signup.html" class="btn btn-white btn-block">Create an account</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="text-center padder clearfix">
+            <p>
+                <small>© Powered by knowledgeflex Technologies Pvt. Ltd.</small><br><br> <a href="#" class="btn btn-xs btn-circle btn-twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="btn btn-xs btn-circle btn-facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="btn btn-xs btn-circle btn-gplus"><i class="fa fa-google-plus"></i></a>
+            </p>
+        </div>
+    </footer>
+    <a id="btnPopMsg" class="btn btn-white" data-toggle="modal" href="#modal" style ="display:none">
+       
+    </a>
+    <div id="modal" class="modal fade">
+        <form class="m-b-none">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#e95f5f">
+                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                        <h4 class="modal-title" id="myModalLabel">Warning.!</h4>
+                    </div> <div class="modal-body">
+                        <div class="block">
+                            <label class="control-label">Wrong UserName or Password</label>
+                            
+                        </div>
+                      
+                    </div> 
+                </div><!-- /.modal-content -->
+            </div>
+        </form>
+    </div> 
+    <script src="assets/js/app.v2.js"></script>
+    <script src="assets/Operation/Login.js"></script>
+</body>
+<!-- Mirrored from flatfull.com/themes/first/signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jun 2016 23:52:36 GMT -->
+</html>
